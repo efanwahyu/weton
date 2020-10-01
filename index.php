@@ -36,9 +36,9 @@ function hdate($day,$month,$year) {
             'month' => $date['month'],
             'year' => $date['year'],
             'dow' => $date['dow'],
-            'hijriday' => $d,
-            'hijrimonth' => $m, 
-            'hijriyear' => $y,
+            'hijriahday' => $d,
+            'hijriahmonth' => $m, 
+            'hijriahyear' => $y,
             'javayear' => $yj,
             'javadow' => $h
         );
@@ -296,17 +296,17 @@ if (isset($_POST['submit'])) {
                     switch ($weton) {
                         case 'Pegat':
                             $x = "Pegat / Pegatan";
-                            $y = "Dalam bahasa jawa berarti bercerai. Pasangan ini kemungkinan akan sering menghadapi masalah dikemudian hari. Masalah itu bisa dari masalah ekonomi, perselingkuhan, kekuasaan yang bisa menyebabkan perceraian.";
+                            $y = "Dalam bahasa jawa yang berarti bercerai. Pasangan ini kemungkinan akan sering menghadapi masalah dikemudian hari. Masalah itu bisa dari masalah ekonomi, perselingkuhan, kekuasaan yang bisa menyebabkan perceraian.";
                             $z = "alert-danger";
                             break;
                         case 'Ratu':
                             $x = "Ratu";
-                            $y = "Identik dengan sosok yang dihormati. Pasangan ini bisa dikatakan sudah cocok dan berjodoh. Sangat dihargai dan disegani oleh tetangga maupun lingkungan sekitar. Bahkan tak sedikit orang sekitar yang iri dengan keharmonisannya dalam membina rumah tangga.";
+                            $y = "Identik dengan sosok yang lebih dihormati. Pasangan ini bisa dikatakan sudah cocok dan berjodoh. Sangat dihargai dan disegani oleh tetangga maupun lingkungan sekitar. Bahkan tak sedikit orang sekitar yang iri dengan keharmonisannya dalam membina rumah tangga.";
                             $z = "alert-success";
                             break;
                         case 'Jodoh':
                             $x = "Jodoh";
-                            $y = "Pasangan ini memang ditakdirkan berjodoh. Mereka bisa saling menerima segala kekurangan maupun kelebihan masing2. Nasib rumah tangga dapat harmonis sampai tua.";
+                            $y = "Pasangan ini memang sudah menjadi ditakdirkan berjodoh. Mereka bisa saling menerima segala kekurangan maupun kelebihan masing2. Nasib rumah tangga dapat harmonis sampai tua.";
                             $z = "alert-success";
                             break;
                         case 'Topo':
@@ -331,7 +331,7 @@ if (isset($_POST['submit'])) {
                             break;
                         case 'Pesthi':
                             $x = "Pesthi";
-                            $y = "Rumah tangga akan berjalan dgn sgt harmonis, rukun, adem, ayem, tenteram & sejahtera sampai tua. Bisa dikatakan jika ada sedikit masalah namun tidak megganggu keharmonisan.";
+                            $y = "Rumah tangga akan berjalan dengan begitu harmonis, rukun, adem, ayem, tenteram & sejahtera sampai tua. Bisa dikatakan jika ada sedikit masalah namun tidak megganggu keharmonisan.";
                             $z = "alert-success";
                             break;
                     }
@@ -361,7 +361,7 @@ if (isset($_POST['submit'])) {
                             </div>
                             <hr>
                             <div class="form-group">
-                                <label><i class="fa fa-user-circle fa-md"></i> Orang Kedua</label>
+                                <label><i class="fa fa-user-circle fa-md"></i>Orang Kedua</label>
                                 <input type="date" name="date2" class="form-control" required>
                             </div>
                             <hr>
